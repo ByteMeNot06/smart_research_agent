@@ -1,0 +1,26 @@
+[project]
+name = "smart-research-agent"
+version = "0.1.0"
+description = "Single-agent web research assistant using LangChain + Tavily"
+requires-python = ">=3.10"
+
+dependencies = [
+  "langchain>=0.1.16",
+  "langchain-openai>=0.1.6",
+  "langchain-community>=0.0.32",
+  "langchain-core>=0.1.45",
+  "tavily-python>=0.3.3",
+  "streamlit>=1.31.0",
+  "python-dotenv>=1.0.1",
+  "requests",
+  "beautifulsoup4",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+dev-dependencies = []
